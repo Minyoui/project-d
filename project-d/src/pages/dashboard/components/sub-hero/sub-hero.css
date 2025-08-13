@@ -1,0 +1,39 @@
+.sub-hero-wrapper {
+    width: 100%;
+    min-height: 15vh;
+    min-height: 15dvh;
+    
+    background-color: #B099C8;
+    display: flex;
+    align-items: center;
+}
+
+.inner-wrapper {
+    position: absolute;
+    width: 100%;
+    min-height: 14vh;
+    min-height: 14dvh;
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.inner-wrapper p {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Antic','sans-serif'
+}
+
+/* FOR MOBILE */
+
+@media (max-width: 720px) {
+    .inner-wrapper p {
+        font-size: 1.3rem;
+    }
+}
