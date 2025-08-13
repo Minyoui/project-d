@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from '../src/pages/dashboard/components/navbar/navbar.jsx';
+import Hero from '../src/pages/dashboard/components/hero/hero.jsx';
 
 const Home = () => (
   <>
     <Navbar />
+    <Hero />
   </>
 );
 

@@ -1,10 +1,12 @@
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
 //icons
 import dropdown from '../../../../assets/icons/dropdown.png';
 import circleArrow from '../../../../assets/icons/circle-up-right.png';
-//other images
+
+//other imgs
 import TextLogo from '../../../../assets/business/maison-d-text-logo.svg';
 
 function Navbar () {
