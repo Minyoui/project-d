@@ -4,12 +4,14 @@ import './App.css';
 import Navbar from '../src/pages/dashboard/components/navbar/navbar.jsx';
 import Hero from '../src/pages/dashboard/components/hero/hero.jsx';
 import SubHero from './pages/dashboard/components/sub-hero/sub-hero.jsx';
+import About from './pages/dashboard/components/about/about.jsx';
 
 const Home = () => (
   <>
     <Navbar />
     <Hero />
     <SubHero />
+    <About />
     
   </>
 );

@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: width 0.4s, height 0.4s ease;
+    transition: width 0.4s, height 0.4s, gap 0.4s ease;
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .nav-links a {
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-decoration: none;
     color: white;
     transition: all 0.4s ease;
@@ -61,6 +61,7 @@
 
     text-decoration: none;
     color: white;
+    font-size: 0.75rem;
     background-color: #B08CCE;
     padding: 10px;
     border-radius: 100px;
@@ -87,9 +88,6 @@
         gap: 20px;
     }
 
-    .nav-links a {
-        font-size: 13px;
-    }
 }
 
 
@@ -127,7 +125,6 @@
 
     .nav-container {
         padding: 5px;
-        font-size: 1.5rem;
         width: 50px;
         border-radius: 10px;
     }
