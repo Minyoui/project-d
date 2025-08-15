@@ -1,5 +1,151 @@
+
+
 .about-wrapper {
     width: 100%;
-    min-height: 100vh;
-    min-height: 100dvh;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 100px 30px;
+
+    overflow: hidden;
+}
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 500px;
+    gap: 20px;
+}
+
+.about-container.animate h1 {
+    opacity: 1;
+}
+.about-container h1{
+    transition: opacity 2s ease;
+    opacity: 0;
+    font-family: 'Antic-Didone','sans-serif';
+    font-weight: 100;
+    letter-spacing: -5px;
+    font-size: 4rem;
+    text-align: end;
+    color: #9E72C3;
+}
+
+.about-container.animate .abt-line{
+    width: 100%;
+}
+
+.abt-line {
+    transition: width 1s ease;
+    height: 1px;
+    width: 0%;
+    background-color: #924DBF;
+}
+
+.about-container.animate p {
+    opacity: 1;
+}
+
+.about-container p {
+    transition: opacity 2s ease;
+    opacity: 0;
+    color: #924DBF;
+    font-size: 0.8rem;
+    text-align: end;
+}
+
+.leaves-img {
+    opacity: 10%;
+    width: 150px;
+}
+
+.about-link.animate {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.about-link {
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(150px);
+    opacity: 0;
+    width: auto;
+}
+
+.sample-photo {
+    width: 550px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 10px solid #B08CCE;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    filter: grayscale(60%);
+    cursor: pointer;
+}
+
+.sample-photo:hover {
+    filter: grayscale(0%);
+    transform: rotate(-10deg);
+    border: 10px solid white;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+/* CUSTOM SIZE RESPONSIVE */
+
+@media (max-width: 1050px) {
+    .about-wrapper {
+        gap: 50px;
+    }
+
+    .sample-photo {
+        width: 450px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .about-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .sample-photo {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+
+/* FOR MOBILE RESPONSIVE */
+
+@media (max-width: 860px) {
+    .about-wrapper {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .about-container h1 {
+        text-align: center;
+    }
+
+    .about-container p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-container {
+        width: 100%;
+    }
+    .about-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
