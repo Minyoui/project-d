@@ -33,7 +33,8 @@
 /* FOR MOBILE */
 
 @media (max-width: 720px) {
+
     .inner-wrapper p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }

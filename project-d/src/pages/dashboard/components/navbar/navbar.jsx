@@ -38,15 +38,15 @@ function Navbar () {
 
     return (
         <>
-            <div className='nav-wrapper'>
+            <div className={`nav-wrapper ${scrolled? 'scrolled' : ''}`}>
                 <nav className={`nav-container ${scrolled? 'scrolled' : ''}`}
                      id={`${menuOpen? 'nav-active' : ''}`}>
                     <a href="/" className='text-logo'><img src={TextLogo}/></a>
                     <ul className={`nav-links ${menuOpen? 'nav-active' : ''}`}>
                         <li><a href='#home'>HOME<div className='nav-underline'/></a></li>
                         <li><a href='#home' id='products-menu'>PRODUCTS<img src={dropdown}/></a></li>
-                        <li><a href='#home'>FAQs</a></li>
-                        <li><a href='#home'>CONTACT US</a></li>
+                        <li><a href='#home'>FAQs<div className='nav-underline'/></a></li>
+                        <li><a href='#home'>CONTACT US<div className='nav-underline'/></a></li>
                     </ul>
                     <Link to='/' className='sign-in-link'>Sign Up / Sign In<img src={circleArrow}/></Link>
                     

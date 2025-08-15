@@ -8,7 +8,7 @@
 
 .nav-container {
     background-color: rgba(36,25,47,0.7);
-    width: fit-content;
+    width: 690px;
     padding-left: 20px;
     padding-right: 5px;
     height: 60px;
@@ -46,7 +46,7 @@
 
 
 #products-menu img {
-    padding-left: 1px;
+    margin-left: 5px;
     transition: transform 0.4s ease;
 }
 
@@ -83,11 +83,37 @@
     transform: rotate(45deg);
 }
 
+.nav-links a:hover .nav-underline {
+    width: 100%;
+}
+
+.nav-underline {
+    width: 0px;
+    height: 1px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+
 @media (max-width: 900px) {
     .nav-container {
+        width: 625px;
         gap: 20px;
     }
 
+}
+
+
+/* SCROLLED NAVBAR STYLE */
+
+.nav-wrapper.scrolled {
+    margin-top: 0;
+}
+
+.nav-container.scrolled {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    border-radius: 0;
 }
 
 
@@ -129,6 +155,7 @@
         border-radius: 10px;
     }
 
+
     #nav-active {
         flex-direction: column-reverse;
         width: 100%;
@@ -148,4 +175,22 @@
         padding-right: 15px;
     }
 
+
+    /* FOR SCROLLED NAVBAR */
+
+    .nav-wrapper.scrolled {
+        margin-top: 20px;
+    }
+
+    .nav-container.scrolled {
+        position: fixed;
+        padding: 5px;
+        width: 50px;
+        border-radius: 10px;
+    }
+
+    .nav-container.scrolled#nav-active {
+        width: 90%;
+    }
+    
 }
