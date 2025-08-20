@@ -15,22 +15,23 @@
 }
 
 .spa-title {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: 'Antic Didone','sans-serif';
   color: white;
   margin-bottom: 10px;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: -3px;
 }
 
 .spa-title-divider {
   width: 80px;
   height: 2px;
-  background-color: #4A2574;
+  background-color: #B08CCE;
   margin: 0 auto 20px;
 }
 
 .spa-subtitle {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #777;
   max-width: 600px;
   margin: 0 auto;
@@ -53,16 +54,20 @@
 }
 
 .category-button {
-  padding: 15px 30px;
+  padding: 12px 30px;
   border: none;
   background-color:#fff;
   color: #B08CCE;
   border-radius: 50px;
   font-size: 16px;
+  font-weight: 600;
   font-family: inherit;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: none;
+
+  display: flex;
+  align-items: center;
 }
 
 .category-button.active {
@@ -79,6 +84,11 @@
 
 .category-icon {
   margin-right: 8px;
+}
+
+.category-icon img {
+    width: 25px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
 }
 
 /* Services Grid */
@@ -157,6 +167,33 @@
 /* Service Package (SPECIFIC FOR PACKAGES)*/
 .service-package {
     color: #667;
+}
+
+.package-price {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.package-price ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.package-price ul li {
+    font-family: 'Montserrat','sans-serif';
+    color: #6251A2;
+    font-weight: 700;
+}
+
+.package-price img {
+    width: 25px;
+}
+
+.service-package span {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* Service Card Footer */

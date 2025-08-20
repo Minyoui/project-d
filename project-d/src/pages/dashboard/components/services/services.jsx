@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import './services.css'; // Import the CSS file
+import './services.css'; 
+
+//icons
+import Solo from '../../../../assets/icons/Solo.png';
+import Couple from '../../../../assets/icons/Couple.png';
+import Lotus from '../../../../assets/icons/Lotus.png';
+import Care from '../../../../assets/icons/Care.png';
+import Spa from '../../../../assets/icons/Spa.png';
+import Diamond from '../../../../assets/icons/Diamond.png';
 
 function Services () {
   const [activeCategory, setActiveCategory] = useState('wellness');
@@ -56,7 +64,7 @@ function Services () {
     ],
     addon: [
       {
-        name: "Ventusa",
+        name: "Ventosa",
         duration: "15 mins",
         price: "₱200",
         description: "Exfoliating treatment to remove dead skin and reveal silky smoothness"
@@ -108,30 +116,40 @@ function Services () {
       {
         name: "Revive Package",
         duration: "1 hour & 30 mins",
-        price: "₱750",
-        description: "Swedish massage, hydrating facial, and aromatherapy body wrap",
-        package: "Hello"
+        solo_icon: <img src={Solo}/>,
+        solo_price: "₱750",
+        couple_icon: <img src={Couple}/>,
+        couple_price: "₱1449",
+        description: "Treatment with Hot Tea and Hot Towel",
+        free: "FREE",
+        package: "2 ADD ONS"
       },
       {
         name: "Retreat Package",
         duration: "2 hours",
-        price: "₱899",
-        description: "Side-by-side massage and champagne for two in our couples suite"
+        solo_icon: <img src={Solo}/>,
+        solo_price: "₱899",
+        couple_icon: <img src={Couple}/>,
+        couple_price: "₱1699",
+        description: "Treatment with Hot Tea and Hot Towel",
+        free: "FREE",
+        package: "3 ADD ONS"
       },
       {
         name: "Refresh Package",
-        duration: "4 hours",
-        price: "$399",
-        description: "Complete pampering with massage, facial, body scrub, and manicure"
+        duration: "Depends on choice",
+        price: "",
+        description: "Treatment with Hot Tea and Hot Towel",
+        package: "1 Hour Massage + Warm Compress"
       },
     ]
   };
 
   const categories = [
-    { id: 'wellness', name: 'Wellness Massage', icon: '🌿' },
-    { id: 'therapeutic', name: 'Therapeutic Massage', icon: '✨' },
-    { id: 'addon', name: 'Add Ons', icon: '🧘‍♀️' },
-    { id: 'packages', name: 'Packages', icon: '💎' }
+    { id: 'wellness', name: 'Wellness Massage', icon: <img src={Lotus}/> },
+    { id: 'therapeutic', name: 'Therapeutic Massage', icon: <img src={Care}/> },
+    { id: 'addon', name: 'Add Ons', icon: <img src={Spa}/> },
+    { id: 'packages', name: 'Packages', icon: <img src={Diamond}/> }
   ];
 
   return (
@@ -166,9 +184,24 @@ function Services () {
             <div key={index} className="service-card">
               <div className="service-header">
                 <h3 className="service-name">{service.name}</h3>
-                <span className="service-price">{service.price}</span>
+                <span className="service-price">
+                    {service.price}
+                </span>
               </div>
               
+              <span>
+                    <p className='package-price'>
+                        <ul>
+                            <li>
+                                {service.solo_icon}{service.solo_price}
+                            </li>
+                            <li>
+                                {service.couple_icon}{service.couple_price}
+                            </li>
+                        </ul>
+                    </p>
+                </span>
+
               <div className="service-duration">
                 <span className="duration-dot"></span>
                 {service.duration}
@@ -178,9 +211,11 @@ function Services () {
                 {service.description}
               </p>
 
-              <p className="service-package">
-                {service.package}
-              </p>
+              <span className="service-package">
+                <p>
+                    <span>{service.free}</span> {service.package}
+                </p>
+              </span>
               
               <div className="service-footer">
                 <button className="book-now-button">
