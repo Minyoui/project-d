@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // other imgs
-import  Leaves from '../../../../assets/business/MD-leaves.png';
 import AboutImg from '../../../../assets/business/MD-about-img.png';
 
 function About () {

@@ -25,3 +25,8 @@ body {
 button, a {
   -webkit-tap-highlight-color: transparent;
 }
+
+img {
+  user-drag: none; /* Works in Safari */
+  -webkit-user-drag: none; /* For older WebKit browsers */
+}
