@@ -7,6 +7,7 @@ import SubHero from './pages/dashboard/components/sub-hero/sub-hero.jsx';
 import About from './pages/dashboard/components/about/about.jsx';
 import Services from './pages/dashboard/components/services/services.jsx';
 import Reviews from './pages/dashboard/components/reviews/reviews.jsx';
+import Gallery from './pages/dashboard/components/gallery/gallery.jsx';
 
 const Home = () => (
   <>
@@ -16,6 +17,7 @@ const Home = () => (
     <About />
     <Services />
     <Reviews />
+    <Gallery />
     
   </>
 );

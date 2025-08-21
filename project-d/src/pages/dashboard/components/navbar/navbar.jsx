@@ -41,6 +41,14 @@ function Navbar () {
             <div className={`nav-wrapper ${scrolled? 'scrolled' : ''}`}>
                 <nav className={`nav-container ${scrolled? 'scrolled' : ''}`}
                      id={`${menuOpen? 'nav-active' : ''}`}>
+
+                    <div className={`hamburger ${menuOpen? 'nav-active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+                        ☰
+                    </div>
+                    <div className={`cancel ${menuOpen? 'nav-active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+                        X
+                    </div>
+
                     <a href="/" className='text-logo'><img src={TextLogo}/></a>
                     <ul className={`nav-links ${menuOpen? 'nav-active' : ''}`}>
                         <li><a href='#home'>HOME<div className='nav-underline'/></a></li>
@@ -50,12 +58,7 @@ function Navbar () {
                     </ul>
                     <Link to='/' className='sign-in-link'>Sign Up / Sign In<img src={circleArrow}/></Link>
                     
-                    <div className={`hamburger ${menuOpen? 'nav-active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
-                        ☰
-                    </div>
-                    <div className={`cancel ${menuOpen? 'nav-active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
-                        X
-                    </div>
+                    
                 </nav>
             </div>
         </>
