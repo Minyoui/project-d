@@ -140,7 +140,7 @@ function Services () {
         duration: "Depends on choice",
         price: "",
         description: "Treatment with Hot Tea and Hot Towel",
-        package: "1 Hour Massage + Warm Compress"
+        package: "1 Hour Massage + Warm Compress and more to choose from... ",
       },
     ]
   };
