@@ -16,8 +16,8 @@ const Home = () => (
     <SubHero />
     <About />
     <Services />
-    <Reviews />
     <Gallery />
+    <Reviews />
     
   </>
 );

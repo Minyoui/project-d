@@ -10,6 +10,8 @@
     width: 100%;
     height: auto;
     padding: 80px 0;
+
+    background: linear-gradient(#1E1E1E 100%, transparent 5%);
 }
 
 .reviews-container {
@@ -23,7 +25,7 @@
 .reviews-header{
   display: flex;
   flex-direction: column;
-  color: #9E72C3;
+  color: white;
   text-align: center;
 }
 
@@ -41,9 +43,9 @@
 /* REVIEW BOX */
 
 .reviews-box {
-  background-color: #FFF;
+  background-color: transparent;
   box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  border-color: white;
+  border: solid 1px white;
   border-radius: 20px;
   padding: 40px 40px;
   max-width: 60%;
@@ -102,7 +104,7 @@
 .reviews-profile-name {
   font-family: 'Nunito', 'sans-serif';
   text-align: center;
-  color: #667;
+  color: whitesmoke;
   font-size: 1.5em;
 }
 
@@ -110,7 +112,7 @@
   display: flex;
   padding: 0 20px;
   font-family: 'Nunito','sans-serif';
-  color: #667;
+  color: whitesmoke;
   text-align: justify;
   font-size: 16px;
   font-weight: 500;
@@ -174,5 +176,7 @@
   .reviews-box {
     max-width: 100%;
     border-radius: 0;
+    border: none;
+    box-shadow: none;
   }
 }
