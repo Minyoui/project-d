@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+
+//Home Components
 import Navbar from '../src/pages/dashboard/components/navbar/navbar.jsx';
 import Hero from '../src/pages/dashboard/components/hero/hero.jsx';
 import SubHero from './pages/dashboard/components/sub-hero/sub-hero.jsx';
@@ -9,6 +11,10 @@ import Services from './pages/dashboard/components/services/services.jsx';
 import Reviews from './pages/dashboard/components/reviews/reviews.jsx';
 import Gallery from './pages/dashboard/components/gallery/gallery.jsx';
 import Contact from './pages/dashboard/components/contact/contact.jsx';
+
+//AboutPage Components
+import AboutNavbar from '../src/pages/about/components/about-navbar/about-navbar.jsx';
+import AboutHero from './pages/about/components/about-hero/about-hero.jsx';
 
 const Home = () => (
   <>
@@ -24,11 +30,19 @@ const Home = () => (
   </>
 );
 
+const AboutPage = () => (
+  <>
+    <AboutNavbar />
+    <AboutHero />
+  </>
+);
+
 const App = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/About" element={<AboutPage />}/>
       </Routes>
     </>
   );

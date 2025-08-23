@@ -36,7 +36,7 @@ function About () {
                     <div className='abt-line'/>
                     <p>Maison`D is a sanctuary of relaxation, offering authentic balinese spa treatments designed to heal and rejuvenate</p>   
                 </div>
-                <Link to="/" ref={sectionRef} className={`about-link ${inView? 'animate' : ''}`}>
+                <Link to="/About" ref={sectionRef} className={`about-link ${inView? 'animate' : ''}`}>
                     <img src={AboutImg} className='sample-photo' alt='Sample Photo'/>
                 </Link>
             </div>
