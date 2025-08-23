@@ -55,7 +55,7 @@ function Navbar () {
                         <li><a href='#home' onClick={() => setMenuOpen(!menuOpen)}>HOME<div className='nav-underline'/></a></li>
                         <li><a href='#home' id='products-menu'>PRODUCTS<img src={dropdown}/></a></li>
                         <li><a href='#home'>FAQs<div className='nav-underline'/></a></li>
-                        <li><a href='#home'>CONTACT US<div className='nav-underline'/></a></li>
+                        <li><a href='#contact' onClick={() => setMenuOpen(!menuOpen)}>CONTACT US<div className='nav-underline'/></a></li>
                     </ul>
                     <Link to='/' className='sign-in-link'>Sign Up / Sign In<img src={circleArrow}/></Link>
                     <Link to='/' className='sign-in-link-mobile'><img src={Profile}/></Link>

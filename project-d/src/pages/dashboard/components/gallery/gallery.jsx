@@ -30,11 +30,12 @@ function Gallery () {
 
     return (
         <>
-            <div className='gallery-section'>
+            <div ref={sectionRef} className={`gallery-section ${inView? 'animate' : ''}`}>
                 <div ref={sectionRef} className={`gallery-header ${inView? 'animate' : ''}`}>
                     <h1>
                         Experience Serenity
                     </h1>
+                    <div className='gallery-divider'/>
                     <p>
                         A glimpse into our tranquil sanctuary
                     </p>

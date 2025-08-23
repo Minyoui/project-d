@@ -10,8 +10,7 @@
     width: 100%;
     height: auto;
     padding: 80px 0;
-
-    background: linear-gradient(#1E1E1E 100%, transparent 5%);
+    background-color: #D3C0E6;
 }
 
 .reviews-container {
@@ -43,13 +42,13 @@
 /* REVIEW BOX */
 
 .reviews-box {
-  background-color: transparent;
+  background-color: white;
   box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  border: solid 1px white;
   border-radius: 20px;
   padding: 40px 40px;
   max-width: 60%;
   height: fit-content;
+  gap: 30px;
 
   display: flex;
   flex-direction: column;
@@ -104,7 +103,7 @@
 .reviews-profile-name {
   font-family: 'Nunito', 'sans-serif';
   text-align: center;
-  color: whitesmoke;
+  color: rgb(67, 67, 67);
   font-size: 1.5em;
 }
 
@@ -112,7 +111,7 @@
   display: flex;
   padding: 0 20px;
   font-family: 'Nunito','sans-serif';
-  color: whitesmoke;
+  color: rgb(67, 67, 67);
   text-align: justify;
   font-size: 16px;
   font-weight: 500;

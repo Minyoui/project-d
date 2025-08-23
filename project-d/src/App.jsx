@@ -8,6 +8,7 @@ import About from './pages/dashboard/components/about/about.jsx';
 import Services from './pages/dashboard/components/services/services.jsx';
 import Reviews from './pages/dashboard/components/reviews/reviews.jsx';
 import Gallery from './pages/dashboard/components/gallery/gallery.jsx';
+import Contact from './pages/dashboard/components/contact/contact.jsx';
 
 const Home = () => (
   <>
@@ -18,7 +19,8 @@ const Home = () => (
     <Services />
     <Gallery />
     <Reviews />
-    
+    <Contact />
+
   </>
 );
 
