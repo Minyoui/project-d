@@ -21,8 +21,10 @@ import Footer from './pages/dashboard/components/footer/footer.jsx';
 import AboutNavbar from '../src/pages/about/components/about-navbar/about-navbar.jsx';
 import AboutHero from './pages/about/components/about-hero/about-hero.jsx';
 
-// Login Component
+// Login & Sign-Up Components
 import Login from '../src/pages/login/components/login.jsx';
+import SignUp from './pages/sign-up/components/sign-up.jsx';
+
 
 
 const Home = () => (
@@ -54,7 +56,10 @@ const App = () => {
   useEffect(() => {
     // Only trigger loader if navigating between Home and AboutPage
     if (
-      (location.pathname === '/' || location.pathname  === '/About' || location.pathname === '/Login')
+      (location.pathname === '/' || 
+        location.pathname  === '/About' || 
+        location.pathname === '/Login' ||
+        location.pathname === '/SignUp')
     ) {
       setLoading(true);
       const timer = setTimeout(() => setLoading(false), 1000); // 1 sec fake load
@@ -71,6 +76,7 @@ const App = () => {
           <Route path="/" element={<Home />}/>
           <Route path="/About" element={<AboutPage />}/>
           <Route path="/Login" element={<Login />}/>
+          <Route path="/SignUp" element={<SignUp />}/>
         </Routes>
       )}
     </>

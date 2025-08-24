@@ -37,6 +37,16 @@ function Login () {
                                 required
                             />
                         </div>
+
+                        {/* REMEMBER ME */}
+                        <label className='custom-checkbox'>
+                            <input 
+                                type='checkbox'
+                                id="remember-me"
+                            /><span className='checkmark'></span>
+                            Remember Me
+                        </label>
+                        
                         <button
                             type="submit"
                         >
@@ -49,7 +59,7 @@ function Login () {
                         </Link>
                     </form>
                     <p className='register-prompt'>
-                        Don't have an account? <Link to="">Create one!</Link>
+                        Don't have an account? <Link to="/SignUp">Create one!</Link>
                     </p>
                     <div className='login-divider'>
                         <div className='left-line'/>
