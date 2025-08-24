@@ -21,6 +21,10 @@ import Footer from './pages/dashboard/components/footer/footer.jsx';
 import AboutNavbar from '../src/pages/about/components/about-navbar/about-navbar.jsx';
 import AboutHero from './pages/about/components/about-hero/about-hero.jsx';
 
+// Login Component
+import Login from '../src/pages/login/components/login.jsx';
+
+
 const Home = () => (
   <>
     <Navbar />
@@ -66,6 +70,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/About" element={<AboutPage />}/>
+          <Route path="/Login" element={<Login />}/>
         </Routes>
       )}
     </>

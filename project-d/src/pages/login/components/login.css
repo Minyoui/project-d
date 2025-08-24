@@ -1,0 +1,101 @@
+
+
+.login-wrapper {
+    width: 100%;
+    min-height: 100dvh;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left-bg {
+    background-image: url("../../../assets/business/maison-bg 4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-bg img {
+    padding: 20px;
+    width: 350px;
+}
+
+
+/* LOGIN CONTAINER */
+
+.login-container {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h1 {
+    font-size: 2.5rem;
+}
+
+/* LOGIN FORM */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.form-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #DEDEDE;
+    border-radius: 15px;
+
+    padding: 20px;
+    font-family: 'Nunito','sans-serif';
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+
+.login-form input::placeholder {
+    font-family: 'Nunito','sans-serif';
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+
+/* BUTTONS */
+
+.login-form button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    background-color: #B08CCE;
+    
+    transition: background-color 0.4s ease;
+}
+
+.login-form button:hover {
+    background-color: #4A2574;
+}
