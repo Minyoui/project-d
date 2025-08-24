@@ -4,7 +4,6 @@
     width: 100%;
     min-height: 100dvh;
     min-height: 100vh;
-
     display: flex;
     flex-direction: row;
 }
@@ -33,11 +32,12 @@
 .login-container {
     padding: 50px;
     width: 100%;
-    height: 100%;
-    gap: 40px;
+    height: auto;
+    gap: 30px;
 
     background-color: white;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -80,6 +80,12 @@
     font-size: 1rem;
 }
 
+.sign-in-policy p,
+.login-divider p,
+.register-prompt {
+    text-align: center;
+}
+
 /* BUTTONS */
 
 .login-form button {
@@ -98,4 +104,78 @@
 
 .login-form button:hover {
     background-color: #4A2574;
+}
+
+/* LOGIN DIVIDER */
+
+.login-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-divider p {
+    width: 50%;
+    padding: 10px;
+    color: #DEDEDE;
+}
+
+.left-line {
+    width: 50%;
+    height: 2px;
+    background-color: #DEDEDE;
+}
+
+.right-line {
+    width: 50%;
+    height: 2px;
+    background-color: #DEDEDE;
+}
+
+/* SIGN-IN METHODS */
+
+.sign-in-methods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 20px;
+    width: 100%;
+}
+
+.sign-in-methods button {
+    width: 100%;
+    height: 100px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #DEDEDE;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sign-in-methods button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+}
+
+.sign-in-policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOR MOBILE RESPONSIVE */
+
+@media (max-width: 720px) {
+    .login-wrapper {
+        flex-direction: column;
+    }
+
+    .left-bg img {
+        width: 200px;
+    }
 }

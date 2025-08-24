@@ -54,7 +54,7 @@ const App = () => {
   useEffect(() => {
     // Only trigger loader if navigating between Home and AboutPage
     if (
-      (location.pathname === '/' || location.pathname  === '/About')
+      (location.pathname === '/' || location.pathname  === '/About' || location.pathname === '/Login')
     ) {
       setLoading(true);
       const timer = setTimeout(() => setLoading(false), 1000); // 1 sec fake load

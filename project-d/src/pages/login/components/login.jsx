@@ -5,6 +5,10 @@ import { useState, useEffect } from 'react';
 // Business 
 import Logo from '../../../assets/business/MD-Logo.svg';
 
+// Icons 
+import Facebook from '../../../assets/icons/facebook.png';
+import Google from '../../../assets/icons/google.png';
+
 function Login () {
     return (
         <>
@@ -44,10 +48,25 @@ function Login () {
                             </button>
                         </Link>
                     </form>
-                    <div className='register-prompt'>
+                    <p className='register-prompt'>
+                        Don't have an account? <Link to="">Create one!</Link>
+                    </p>
+                    <div className='login-divider'>
+                        <div className='left-line'/>
+                        <p>Or Sign-In With</p>
+                        <div className='right-line'/>
+                    </div>
+                    {/* SIGN-IN METHODS */}
+                    <div className='sign-in-methods'>
+                        <button><img src={Google} alt='Google'/></button>
+                        <button><img src={Facebook} alt='Google'/></button>
+                    </div>
+                    <div className='sign-in-policy'>
                         <p>
-                            Don't have an account? <Link to="">Create one!</Link>
+                            By signing up, you agree to our
                         </p>
+                        <Link>Terms & Conditions</Link>
+                        <Link>Privacy Policy</Link>
                     </div>
                 </div>
             </div>
