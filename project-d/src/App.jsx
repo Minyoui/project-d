@@ -15,6 +15,7 @@ import Services from './pages/dashboard/components/services/services.jsx';
 import Reviews from './pages/dashboard/components/reviews/reviews.jsx';
 import Gallery from './pages/dashboard/components/gallery/gallery.jsx';
 import Contact from './pages/dashboard/components/contact/contact.jsx';
+import Footer from './pages/dashboard/components/footer/footer.jsx';
 
 // AboutPage Components
 import AboutNavbar from '../src/pages/about/components/about-navbar/about-navbar.jsx';
@@ -30,6 +31,7 @@ const Home = () => (
     <Gallery />
     <Reviews />
     <Contact />
+    <Footer />
 
   </>
 );
